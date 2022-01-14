@@ -238,7 +238,7 @@
 - git remote add origin https://github.com/Ryu4949/RacingGround.git
   - 뒷부분이 remote repository 주소인데, 너무 기니까 앞으로 이 주소를 "origin"이라고 부를거야 라는 의미	
   - 여기서 origin은 보통 remote repository에 **관례적**으로 붙이는 이름
-- git push -u origin master
+- `git push -u origin master`
   - -u 옵션은 지금처럼 remote repository를 등록한 직후에만 쓰면 됨
   - -u는 set upstream의 약자
   - 지금 우리는 local에 master라는 큰 줄기를 갖고 있는데, 얘를 remote로 보내는 과정이라고 생각하면 됨. branch의 존재를 remote에 알려주는 것
