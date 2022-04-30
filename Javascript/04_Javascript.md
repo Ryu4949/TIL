@@ -179,7 +179,7 @@ console.log(mac)
 
 ```javascript
 const elem1 = document.querySelector('#list1')
-elem1.style.backgroundㅊolor = '#dd151d'
+elem1.style.backgroundcolor = '#dd151d'
 ```
 
 - 이렇게 하고나서 html css 코드를 보면 `inner style`로 들어감
@@ -377,21 +377,4 @@ plusbtn.addEventListener('click', function() {
 })
 ```
 
-
-
-#### 다른 풀이
-
-```javascript
-const plusBtn = document.querySelector('#plusbtn')
-const minusBtn = document.querySelector('#minusbtn')
-const number = document.querySelector('#number')
-
-plusBtn.addEventListener('click', function () {
-    console.log('plus')
-})
-
-minusBtn.addEventListener('click', function () {
-    console.log('minus')
-})
-```
 
