@@ -310,7 +310,7 @@ console.log(fullName)	// Brandan Eich
 
   - 호출되지 않는 함수를 실행하는 경우
 
-- `empty`와의 구분이 필요
+- `null`, `empty`와의 구분이 필요
 
 
 
@@ -372,8 +372,8 @@ console.log(fullName)	// Brandan Eich
 - `typeof` 연산자의 결과는 `string`
 
   ```javascript
-  let firstName = empty
-  // ReferenceError: empty is not defined
+  const a = ''
+  console.log(typeof(a))
   ```
 
 - `undefined`나 `null`과는 다르게 변수의 선언과 데이터가 **있는** 상태
