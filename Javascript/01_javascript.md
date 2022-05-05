@@ -173,6 +173,47 @@
   var number = 50
   ```
 
+
+
+
+#### 명령어의 생략
+
+- 별도의 변수 선언 명령어가 없이도 변수 선언이 가능
+
+- 재선언 및 재할당이 가능하다는 점에서 `var`와 유사(물론 선언 명령어가 없기 때문에 재선언과 재할당을 구분할 수는 없음)
+
+- `var`과의 차이
+
+  - 함수 스코프의 `var`과는 달리 전역 스코프를 가짐
+
+    ```javascript
+    var a = 5;
+    function num() {
+        var a = 6;
+        console.log(a);
+    }
+    num()	//6
+    console.log(a)	//5
+    //------------------------------------
+    b = 5;
+    function num2() {
+        b = 6;
+        console.log(b);
+    }
+    num2()	// 6 
+    console.log(b)	// 6
+    ```
+
+  - 호이스팅의 문제가 발생하지는 않는 것처럼 보임
+
+    ```javascript
+    console.log(a)
+    a = 5
+    // Uncaught ReferenceError: a is not defined
+    ```
+
+    
+
   
 
 

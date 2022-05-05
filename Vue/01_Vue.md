@@ -222,22 +222,37 @@ const app = new Vue({
 
 ### Directive
 
-
+- v-접두사가 있는 특수 속성
+- v-for를 제외한 속성 값은 단일 JS 표현식이 됨
+- 표현식의 값이 변경될 때 반응적으로 DOM 에 적용하는 역할
+- 전달인자(Arguments): `:`
+- 수식어(Modifiers): `.`
 
 ### v-text
 
+- 엘리먼트의 textContent를 업데이트
+
 - `{{ message }}`랑 걍 똑같음
+
   - `<p v-text="message"></p>`
+
   - `<p>{{ message }}</p>` 위에거랑 똑같은거
-
-### Directive
-
-- `v-` 붙어있는거 다 디렉티브라고 함
-  - `Vue`한테 뭔가를 시키는 애들
 
 ### v-html
 
 - 거의 안씀
+
+### v-show
+
+- 조건부 렌더링 중 하나
+- 요소는 항상 렌더링되고 DOM에 남아있음
+- 단순히 엘리먼트에 display CSS 속성을 토글하는 것
+
+### v-if, v-else-if, v-else
+
+- 조건부 렌더링
+- directive의 표현식이 true일 때만 렌더링
+- 엘리먼트 및 포함된 directive는 토글하는 동안 삭제되고 다시 작성됨
 
 ### v-bind
 
